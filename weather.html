@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard - Alvin Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-circle">
+            <i class="fa-solid fa-cloud-sun"></i>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-cloud-sun-rain"></i>
+                WeatherPro
+            </div>
+            <div class="header-center">
+                <div class="current-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="currentCity">Manila, PH</span>
+                </div>
+                <div class="current-temp">
+                    <span id="currentTemp">28°</span>
+                    <i id="currentIcon" class="fa-solid fa-cloud-sun"></i>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="location-btn" id="locationBtn">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search city weather...">
+                <button id="searchBtn">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+            <div class="search-suggestions" id="suggestions"></div>
+        </div>
+    </section>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+        <div class="container">
+            <!-- Current Weather -->
+            <section class="current-weather">
+                <div class="weather-card large-card">
+                    <div class="weather-header">
+                        <div class="location-info">
+                            <h1 id="mainCity">Manila</h1>
+                            <p id="mainDate">Monday, Dec 16</p>
+                        </div>
+                        <div class="weather-icon large-icon">
+                            <i id="mainIcon" class="fa-solid fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="weather-main">
+                        <div class="temp-main">
+                            <span id="mainTemp">28°</span>
+                            <span class="temp-unit">C</span>
+                        </div>
+                        <div class="weather-desc" id="mainDesc">Partly cloudy</div>
+                    </div>
+                    <div class="weather-details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Feels Like</span>
+                            <span id="feelsLike" class="detail-value">26°</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Humidity</span>
+                            <span id="humidity" class="detail-value">75%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Wind</span>
+                            <span id="windSpeed" class="detail-value">12 km/h</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Pressure</span>
+                            <span id="pressure" class="detail-value">1013 hPa</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hourly Forecast -->
+            <section class="hourly-forecast">
+                <h2>Hourly Forecast</h2>
+                <div class="hourly-scroll">
+                    <div class="hourly-grid" id="hourlyForecast">
+                        <!-- Hourly items populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5-Day Forecast -->
+            <section class="forecast-grid">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-cards" id="dailyForecast">
+                    <!-- Daily forecast cards populated by JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Weather Dashboard • Designed by <a href="index.html">Alvin</a>|</p>
+        </div>
+    </footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>

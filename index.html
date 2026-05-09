@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="logo-loader">Alvin<span>Portfolio</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Alvin<span>Jade</span></div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge"> Featured Project</div>
+                <h1 class="hero-title">
+                    Alvin <span>Portfolio</span> Website
+                </h1>
+                <p class="hero-desc">
+                    Responsive portfolio with glassmorphism effects, smooth animations,
+                    scroll-triggered interactions, and modern UI/UX design patterns.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Responsive</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Animations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Dependencies</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View All Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <img src="alvin.jpg" alt="Alvin Profile" class="profile-img">
+                    <div class="profile-ring"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="float-el float-1"></div>
+            <div class="float-el float-2"></div>
+            <div class="float-el float-3"></div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key <span>Features</span></h2>
+                <p>Modern technologies and design patterns used</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-mobile-retro"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Perfect on all devices with mobile-first approach and CSS Grid/Flexbox</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-magic"></i>
+                    </div>
+                    <h3>Glassmorphism</h3>
+                    <p>Modern glass effects with backdrop-filter and beautiful transparency</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>Smooth Animations</h3>
+                    <p>60fps animations using CSS transforms and Intersection Observer</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Clean Code</h3>
+                    <p>Semantic HTML5, modern CSS3, vanilla JavaScript - zero frameworks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Other <span>Projects</span></h2>
+                <p>More amazing work by Alvin</p>
+            </div>
+            <div class="projects-grid">
+                <a href="ecommerce.html" class="project-card" target="_blank">
+                    <div class="project-image">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce UI</h3>
+                        <p>Modern shopping interface with filtering and cart functionality</p>
+                        <div class="project-tech">
+                            <span>CSS Grid</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="weather.html" class="project-card" target="_blank">
+                    <div class="project-image">
+                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Interactive weather app with search and dark/light theme</p>
+                        <div class="project-tech">
+                            <span>CSS Animations</span>
+                            <span>API Ready</span>
+                            <span>Glass UI</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="comingsoon.html" class="project-card">
+                    <div class="project-image">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Coming Soon</h3>
+                        <p>More amazing projects in development</p>
+                        <div class="project-tech">
+                            <span>Stay Tuned</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tech <span>Stack</span></h2>
+                <p>Skills used in this project</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS3</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-js-square"></i>
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-mobile-alt"></i>
+                    <span>Responsive</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="98"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's <span>Work</span> Together</h2>
+                    <p>Ready to bring your ideas to life?</p>
+                    <div class="contact-links">
+                        <a href="mailto:jadeverdon3@gmail.com" class="contact-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>jadeverdon3@gmail.com</span>
+                        </a>
+                        <a href="tel:+639917321485" class="contact-link">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+63 991 732 1485</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Alv<span>in</span></div>
+                    <p>Made with ❤️ using HTML, CSS & JS</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

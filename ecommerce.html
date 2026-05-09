@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce UI - Alvin Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-circle">
+            <i class="fa-solid fa-shopping-cart"></i>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                ShopVibe
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search products...">
+                </div>
+                <div class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">3</span>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Discover Amazing <span>Products</span></h1>
+                <p>Shop the latest trends with fast delivery and best prices</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn primary-btn">Shop Now</a>
+                    <a href="#" class="btn secondary-btn">View Offers</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Shopping">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop by <span>Category</span></h2>
+                <p>Browse our popular categories</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <h3>Fashion</h3>
+                    <p>250+ Products</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <h3>Electronics</h3>
+                    <p>180+ Products</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-home"></i>
+                    </div>
+                    <h3>Home & Living</h3>
+                    <p>320+ Products</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <p>95+ Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span>Products</span></h2>
+                <p>Don't miss our best sellers</p>
+            </div>
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="electronics">Electronics</button>
+                <button class="filter-btn" data-filter="home">Home</button>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sneakers">
+                        <div class="product-badge">New</div>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <button class="action-btn quickview">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Air Max Sneakers</h3>
+                        <div class="product-price">
+                            <span class="price">₱2,499</span>
+                            <span class="old-price">₱3,299</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(127)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Headphones">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <button class="action-btn quickview">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sony WH-1000XM5</h3>
+                        <div class="product-price">
+                            <span class="price">₱12,999</span>
+                            <span class="old-price">₱18,999</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>(89)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="home">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Chair">
+                        <div class="product-badge">Hot</div>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <button class="action-btn quickview">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern Office Chair</h3>
+                        <div class="product-price">
+                            <span class="price">₱5,299</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(203)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Watch">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <button class="action-btn quickview">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rolex Submariner</h3>
+                        <div class="product-price">
+                            <span class="price">₱45,999</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(156)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- More Products -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Smartphone">
+                        <div class="product-badge">New</div>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <button class="action-btn quickview">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 Pro</h3>
+                        <div class="product-price">
+                            <span class="price">₱52,999</span>
+                            <span class="old-price">₱59,999</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(234)</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Get 20% OFF <span>Your First Order</span></h2>
+                    <p>Subscribe to our newsletter and get exclusive deals</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fa-solid fa-store"></i>
+                        ShopVibe
+                    </div>
+                    <p>Your trusted online shopping destination</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShopVibe. Designed by Alvin | All rights reserved. <a href="index.html">HOME</a> </p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="ecommerce.js"></script>
+</body>
+</html>
